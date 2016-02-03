@@ -12,30 +12,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <div class="calculator">
-                    <input id="display" class="display" value="0"/>
-                    <div class="buttons">
-                        <button id="clear" value="">C</button>
-                        <button id="backspace" value="-">⬅</button>
-                        <button id="sign" value="-+">±</button>
-                        <button id="divide" value="/">÷</button>
-                        <button class="digit" value="7">7</button>
-                        <button class="digit" value="8">8</button>
-                        <button class="digit" value="9">9</button>
-                        <button id="multiply" value="*">×</button>
-                        <button class="digit" value="4">4</button>
-                        <button class="digit" value="5">5</button>
-                        <button class="digit" value="6">6</button>
-                        <button id="subtract" value="-">-</button>
-                        <button class="digit" value="1">1</button>
-                        <button class="digit" value="2">2</button>
-                        <button class="digit" value="3">3</button>
-                        <button id="add" value="+">+</button>
-                        <button class="digit" value="0">0</button>
-                        <button class="digit" value=".">.</button>
-                        <button id="equal" value="=">=</button>
+                <form name="calc">
+                    <div class="calculator">
+                        <input id="display" class="display" name="display" />
+                        <div class="buttons">
+                            <input class="digit" id="all-clear" type="button" name="allClear" value="AC" OnClick="calc.display.value = ''">
+                            <input class="digit" id="clear" type="button" name="clear" value="C" OnClick="calc.display.value = ''">
+                            <input class="digit" type="button" name="seven" value="7" OnClick="calc.display.value += '7'">
+                            <input class="digit" id="divide" type="button" name="divide" value="/" OnClick="calc.display.value += '/'">
+                            <input class="digit" type="button" name="seven" value="7" OnClick="calc.display.value += '7'">
+                            <input class="digit" type="button" name="eight" value="8" OnClick="calc.display.value += '8'">
+                            <input class="digit" type="button" name="nine" value="9" OnClick="calc.display.value += '9'">
+                            <input class="digit" id="multiply" type="button" name="times" value="*" OnClick="calc.display.value += '*'">
+                            <input class="digit" type="button" name="four" value="4" OnClick="calc.display.value += '4'">
+                            <input class="digit" type="button" name="five" value="5" OnClick="calc.display.value += '5'">
+                            <input class="digit" type="button" name="six" value="6" OnClick="calc.display.value += '6'">
+                            <input class="digit" id="minus" type="button" name="minus" value="-" OnClick="calc.display.value += '-'">
+                            <input class="digit" type="button" name="one" value="1" OnClick="calc.display.value += '1'">
+                            <input class="digit" type="button" name="two" value="2" OnClick="calc.display.value += '2'">
+                            <input class="digit" type="button" name="three" value="3" OnClick="calc.display.value += '3'">
+                            <input class="digit" id="add" type="button" name="plus" value="+" OnClick="calc.display.value += '+'">
+                            <input class="digit" type="button" name="zero" value="0" OnClick="calc.display.value += '0'">
+                            <input class="digit" type="button" name="period" value="." OnClick="calc.display.value += '.'">
+                            <input id="equal" class="digit" type="button" name="equals" value="=" OnClick="calc.display.value = eval(calc.display.value)">
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
