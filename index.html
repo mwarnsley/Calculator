@@ -12,38 +12,28 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <div class="calc-container">
-                    <div class="display"></div>
+                <div class="calculator">
+                    <input id="display" class="display" value="0"/>
                     <div class="buttons">
-                        <ul>
-                            <li>M+</li>
-                            <li>M-</li>
-                            <li>Mc</li>
-                            <li>%</li>
-                        </ul>
-                        <ul>
-                            <li>9</li>
-                            <li>8</li>
-                            <li>7</li>
-                            <li>X</li>
-                        </ul>
-                        <ul>
-                            <li>6</li>
-                            <li>5</li>
-                            <li>4</li>
-                            <li>-</li>
-                        </ul>
-                        <ul>
-                            <li>3</li>
-                            <li>2</li>
-                            <li>1</li>
-                            <li>+</li>
-                        </ul>
-                        <ul>
-                            <li>0</li>
-                            <li>.</li>
-                            <li>=</li>
-                        </ul>
+                        <button id="clear" value="">C</button>
+                        <button id="backspace" value="-">⬅</button>
+                        <button id="sign" value="-+">±</button>
+                        <button id="divide" value="/">÷</button>
+                        <button class="digit" value="7">7</button>
+                        <button class="digit" value="8">8</button>
+                        <button class="digit" value="9">9</button>
+                        <button id="multiply" value="*">×</button>
+                        <button class="digit" value="4">4</button>
+                        <button class="digit" value="5">5</button>
+                        <button class="digit" value="6">6</button>
+                        <button id="subtract" value="-">-</button>
+                        <button class="digit" value="1">1</button>
+                        <button class="digit" value="2">2</button>
+                        <button class="digit" value="3">3</button>
+                        <button id="add" value="+">+</button>
+                        <button class="digit" value="0">0</button>
+                        <button class="digit" value=".">.</button>
+                        <button id="equal" value="=">=</button>
                     </div>
                 </div>
             </div>
@@ -51,6 +41,5 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="main.js"></script>
     </body>
 </html>
